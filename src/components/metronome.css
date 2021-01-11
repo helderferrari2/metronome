@@ -1,0 +1,132 @@
+html,
+body,
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: black;
+}
+
+
+body {
+  background: hsla(197, 100%, 63%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(197, 100%, 63%, 1) 0%,
+    hsla(294, 100%, 55%, 1) 100%
+  );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.metronome {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 980px;
+  padding: 20px;
+  background: #28313b;
+}
+
+.metronome-display {
+  display: flex;
+  border: 2px solid #cccccc;
+  flex: 8;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.metronome-display h1 {
+  font-size: 100px;
+}
+
+.metronome-slider {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #cccccc;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.metronome-slider input {
+  width: 100%;
+  margin: 0 10px 0 10px;
+}
+
+.metronome-slider span {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: white;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #28313b;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #28313b;
+  cursor: pointer;
+}
+
+.metronome-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border: 2px solid #cccccc;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.metronome-controls:hover{
+    border: 2px solid white;
+}
