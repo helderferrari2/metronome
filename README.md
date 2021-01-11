@@ -3,7 +3,7 @@
 This project is a Metronome used for study music.
 
 # Screenshots
-![alt text](https://github.com/helderferrari2/metronome/blob/main/screenshots/1.png?raw=true)
+![alt text](https://github.com/helderferrari2/metronome/blob/main/screenshots/1.PNG?raw=true)
 
 
 ## Project setup
